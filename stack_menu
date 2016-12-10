@@ -45,7 +45,7 @@ class Stack {
 };
 
 void menu(){
-	cout << "What would you like to do?: \n";
+	cout << "\nWhat would you like to do?: \n";
 	cout << "1: Push \n";
 	cout << "2: Pop \n";
 	cout << "3: Display \n";
