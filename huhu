@@ -1,0 +1,79 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int choice, num, count(0);
+class LinkedList{
+    struct Node {
+        int x;
+        Node *next;
+    };
+
+public:
+    LinkedList(){
+        head = NULL; // set head to NULL
+    }
+
+    void addValue(int val){
+        Node *n = new Node();   
+        n->x = val;             
+        n->next = head;         
+                               
+        head = n;              
+    }
+
+    int popValue(){
+        Node *n = head;
+        int ret = n->x;
+
+        head = head->next;
+        delete n;
+        return ret;
+    }
+
+private:
+    Node *head; 
+};
+
+int main() {
+    LinkedList list;
+    while(num!=1){
+    //system("cls");
+    cout << "\nMAIN MENU \n";
+	cout << "1: Insert \n";
+	cout << "2: Pop \n";
+	cout << "3: Exit \n";
+	//cout << "4: Display \n";
+	cout << "Choice: ";
+    cin >> choice;
+    switch(choice){
+  	 case 1:	  	cout << "Enter a number: ";
+  	       			cin >>  num;
+  		    		list.addValue(num); 
+  		    		count++;
+	      			break;
+  	 case 2:	    if(count>0){
+							list.popValue();
+  	     					count--;
+  	     				}
+						if (count==0)
+	 					cout << "EMPTY\n";
+	 				else
+	 					for (int n = 0; n < count; n++){
+							cout << list.popValue() << " "<<endl;
+						}   	
+					break;
+  	 case 3:        exit(1);
+	    			break; 
+	 /*case 4:		if (count==0)
+	 					cout << "EMPTY\n";
+	 				else
+	 					for (int n = 0; n < count; n++){
+							cout << list.popValue() << " "<<endl;
+						}
+	 				break;*/
+	 default:   	cout << "Invalid input";
+	    			break;
+	}
+   }
+}
