@@ -16,6 +16,20 @@ int count() {
   }
   return c;
 }
+void search(int val) {
+  struct node * n;
+  int c = 1;
+  n = head;
+  while (n != NULL) {
+    if(n -> data = val)     
+    	printf("Found %d at position %d\n", val, c);
+    n = n -> next;
+    c++;
+  }
+  //return c;
+}
+
+
 
 void append(int num) {
   struct node * temp, * right;
@@ -88,14 +102,14 @@ void insert(int num) {
     add(num);
   } else {
     while (temp != NULL) {
-      if (temp -> data < num)
+    //  if (temp -> data < num)
         c++;
       temp = temp -> next;
     }
     if (c == 0)
       add(num);
     else if (c < count())
-      addafter(num, ++c);
+     addafter(num, ++c);
     else
       append(num);
   }
@@ -126,7 +140,8 @@ int main() {
     printf("2.Display\n");
     printf("3.Size\n");
     printf("4.Delete\n");
-    printf("5.Exit\n");
+    //printf("5.Exit\n");
+    printf("5.Search\n");
     printf("Enter your choice : ");
     if (scanf("%d", & i) <= 0) {
       printf("Enter only an Integer\n");
@@ -135,7 +150,7 @@ int main() {
       switch (i) {
       case 1:
         printf("Enter the number to insert : ");
-        scanf("%d", & num);
+        scanf("%d", &num);
         insert(num);
         break;
       case 2:
@@ -161,8 +176,17 @@ int main() {
             printf("%d not found in the list\n", num);
         }
         break;
-      case 5:
-        return 0;
+      //case 5:
+        //return 0;
+    case 5:
+    	if (head == NULL)
+          printf("List is Empty\n");
+        else {
+         printf("Enter the number to search : ");
+          scanf("%d", & num);
+    	  search(num);
+    }
+    	break;
       default:
         printf("Invalid option\n");
       }
