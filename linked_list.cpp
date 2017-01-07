@@ -29,7 +29,7 @@ void search(int val) {
   //return c;
 }
 
-int deleteall(int num){
+void deleteall(int num){
   struct node * temp, * prev;
   temp = head;
   while (temp != NULL) {
@@ -37,18 +37,17 @@ int deleteall(int num){
       if (temp == head) {
         head = temp -> next;
         free(temp);
-        return 1;
+       temp = prev -> next;
       } else {
         prev -> next = temp -> next;
         free(temp);
-        return 1;
+      temp = prev -> next;
       }
     } else {
       prev = temp;
       temp = temp -> next;
     }
   }
-  return 0;
 }
 
 void append(int num) {
