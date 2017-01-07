@@ -171,5 +171,3 @@ int main() {
   }
   return 0;
 }
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Securi
