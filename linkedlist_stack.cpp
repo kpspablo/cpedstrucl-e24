@@ -56,7 +56,7 @@ int main() {
 			case 2: if (count==0)	//pop a number and display the number that was pop
 						cout << "EMPTY\n";
 					else
-			        	cout << list.popValue() << endl;
+			        	cout << list.popValue() << "WAS POPPED" << endl;
 					count--;
 					break;
 			case 3: exit(1);
