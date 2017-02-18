@@ -10,11 +10,11 @@ int main(){
                 a[j]=a[j+1];
                 a[j+1]=swap;
             }
-        cout << "PASS " <<++count<<endl; 
-        for(int k=0;k<5;++k){
-           cout<<a[k]<<" ";  
-    	}
-	cout << "SWAPPED: "<<a[j]<<" "<<a[j+1]<<endl;
+            cout << "PASS " <<++count<<endl; 
+            for(int k=0;k<5;++k){
+               cout<<a[k]<<" ";  
+    	    }
+	    cout << "SWAPPED: "<<a[j]<<" "<<a[j+1]<<endl;
         }
     }
     return 0;
