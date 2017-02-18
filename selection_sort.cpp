@@ -12,7 +12,7 @@ int main(){
             }
         a[index] =a[i];
         a[i]=min;
-	cout << "PASS: " <<++count<<endl;  
+	cout << "PASS " <<++count<<endl;  
         for(int k=0;k<5;++k)
         cout<<a[k]<<endl;   
     }
