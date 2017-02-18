@@ -31,7 +31,7 @@ main(){
 		temp[k++]=a[i];
 	for(i=0;i<8;i++)
 		a[i]=temp[i];
-	cout << "PASS: " <<++count<<endl;  
+	cout << "PASS " <<++count<<endl;  
         for(k=0;k<8;++k)
         	cout<<a[k]<<endl;  	
 	}
