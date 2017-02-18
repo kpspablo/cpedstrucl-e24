@@ -34,7 +34,6 @@ main(){
 	cout << "PASS " <<++count<<endl;  
         for(k=0;k<8;++k)
         	cout<<a[k]<<endl;  	
-	}
-
+    }
     return 0;
 }
