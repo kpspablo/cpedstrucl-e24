@@ -1,6 +1,7 @@
 #include<iostream> 
 using namespace std;
 int main(){
+	int count(0);
   	int a[]= {35,10,55,20,5};     
     for(int i=1;i<5;++i){
         for(int j=0;j<(5-i);++j)
@@ -9,6 +10,7 @@ int main(){
                 a[j]=a[j+1];
                 a[j+1]=swap;
             }
+        cout << "PASS: " <<++count<<endl; 
         for(int k=0;k<5;++k)
         cout<<a[k]<<endl;   
     }
