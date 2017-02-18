@@ -1,7 +1,8 @@
 #include<iostream> 
 using namespace std;
 int main(){
-  	int a[]= {30, 40, 20, 50, 10};     
+    int count(0);
+    int a[]= {30, 40, 20, 50, 10};     
     for(int i=0;i<5-1;i++){
         int min=a[i], index=i;
 		for(int j=i+1;j<5;j++)
@@ -11,6 +12,7 @@ int main(){
             }
         a[index] =a[i];
         a[i]=min;
+	cout << "PASS: " <<++count<<endl;  
         for(int k=0;k<5;++k)
         cout<<a[k]<<endl;   
     }
