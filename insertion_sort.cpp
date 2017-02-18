@@ -11,7 +11,7 @@ int main(){
 	   a[j+1]=tmp;
 	   cout << "PASS " <<++count<<endl;     
            for(int k=0;k<5;++k)
-              cout<<a[k]<<endl;   
+              cout<<a[k]<<" ";   
         }
         return 0;
 }
