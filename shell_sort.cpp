@@ -10,7 +10,7 @@ void shell_sort(int *a, int n){
 				a[j] = a[j-h];
 			}
 			a[j]=k;
-			cout << "PASS: " <<++count<<endl;  
+			cout << "PASS " <<++count<<endl;  
         	for(int k=0;k<5;++k)
         		cout<<a[k]<<endl;     
 		}
