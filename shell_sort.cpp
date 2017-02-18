@@ -11,14 +11,14 @@ void shell_sort(int *a, int n){
 			}
 			a[j]=k;
 			cout << "PASS " <<++count<<endl;  
-        	for(int k=0;k<5;++k)
-        		cout<<a[k]<<endl;     
+        	        for(int k=0;k<5;++k)
+        		   cout<<a[k]<<endl;     
 		}
 	}
 }
 int main(int ac, char **av){
     int a[]= {40, 30, 20, 50, 10}; 
-	int n = 5;
-	shell_sort(a,n);  
+    int n = 5;
+    shell_sort(a,n);  
     return 0;
 }
