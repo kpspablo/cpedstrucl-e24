@@ -9,7 +9,7 @@ int main(){
 			a[j+1]=a[j];
 		}
 		a[j+1]=tmp;
-	cout << "PASS: " <<++count<<endl;     
+	cout << "PASS " <<++count<<endl;     
         for(int k=0;k<5;++k)
         cout<<a[k]<<endl;   
     }
