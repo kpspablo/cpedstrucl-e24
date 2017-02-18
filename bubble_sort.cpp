@@ -10,7 +10,7 @@ int main(){
                 a[j]=a[j+1];
                 a[j+1]=swap;
             }
-        cout << "PASS: " <<++count<<endl; 
+        cout << "PASS " <<++count<<endl; 
         for(int k=0;k<5;++k){
            cout<<a[k]<<" ";  
     	}
